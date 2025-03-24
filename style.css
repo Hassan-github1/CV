@@ -1,0 +1,149 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.profile-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.header-text h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.header-text h2 {
+    color: #3498db;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-info p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 25px;
+}
+
+.section h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Accomplishments and Skills */
+.accomplishment-item, .skill-category {
+    margin-bottom: 15px;
+}
+
+.skills-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skills-columns ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+/* Education and Languages */
+.education-item, .languages-list {
+    margin-bottom: 15px;
+}
+
+.education-item h4, .languages-list li {
+    margin-bottom: 5px;
+}
+
+.languages-list {
+    list-style-type: none;
+}
+
+/* Links and Hover Effects */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+    .skills-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-shadow: none;
+    }
+}
