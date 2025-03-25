@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +6,13 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #333;
     background-color: #f4f4f4;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     background-color: white;
     padding: 30px;
@@ -83,9 +82,9 @@ body {
     gap: 20px;
 }
 
-.skills-columns ul {
+ul {
     list-style-type: disc;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 /* Education and Languages */
@@ -111,6 +110,13 @@ a {
 a:hover {
     color: #2980b9;
     text-decoration: underline;
+}
+
+.simple-footer {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
 }
 
 /* Responsive Design */
