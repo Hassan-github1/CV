@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Resume</title>
+    <style>
+        .print-only { display: none; }
+        @media print {
+            .no-print { display: none; }
+            .print-only { display: block; }
+            .container { box-shadow: none; }
+            .profile-photo { width: 120px; }
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,6 +34,19 @@
         <section class="section">
             <h3>Summary/Objective</h3>
             <p>A highly motivated computer engineering student with a passion for software development and innovative technologies. Seeking opportunities to apply academic knowledge and hands-on project experience to contribute to cutting-edge technological solutions.</p>
+        </section>
+
+        <section class="section">
+            <h3>EXPERIENCE</h3>
+            <div class="experience-item">
+                <h4>Internship in UAE</h4>
+                <p class="company">AlKarameh Company</p>
+                <ul>
+                    <li>Assisted with databases queries and data analysis</li>
+                    <li>Assisted with networking setup</li>
+                    <li>Conducted system testing and debugging</li>
+                </ul>
+            </div>
         </section>
 
         <section class="section">
@@ -93,6 +115,9 @@
                 <li>Another Language (Optional): Basic Proficiency</li>
             </ul>
         </section>
+        <footer class="simple-footer">
+            <p>© 2023 Hassan El Hadak</p>
+        </footer>
     </div>
 </body>
 </html>
